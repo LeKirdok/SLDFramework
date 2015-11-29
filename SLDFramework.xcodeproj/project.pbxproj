@@ -12,6 +12,7 @@
 		63B6135A1C0B834500DE3A84 /* SLDGrandBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B613551C0B834500DE3A84 /* SLDGrandBaseViewController.m */; };
 		63B6135B1C0B834500DE3A84 /* SLDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B613571C0B834500DE3A84 /* SLDUtils.h */; };
 		63B6135C1C0B834500DE3A84 /* SLDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B613581C0B834500DE3A84 /* SLDUtils.m */; };
+		DAEABB84E5FDD34B6F534317 /* libPods-SLDFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A4AB94710D515A32674BE8 /* libPods-SLDFramework.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		63B613551C0B834500DE3A84 /* SLDGrandBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDGrandBaseViewController.m; sourceTree = "<group>"; };
 		63B613571C0B834500DE3A84 /* SLDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDUtils.h; sourceTree = "<group>"; };
 		63B613581C0B834500DE3A84 /* SLDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDUtils.m; sourceTree = "<group>"; };
+		8CB62A9410E92FEFF80DCFF4 /* Pods-SLDFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLDFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLDFramework/Pods-SLDFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		98A4AB94710D515A32674BE8 /* libPods-SLDFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLDFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94148554A4F76E38AAE0EC2 /* Pods-SLDFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLDFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLDFramework/Pods-SLDFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEABB84E5FDD34B6F534317 /* libPods-SLDFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DEC997BD882CE9D09E902CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB62A9410E92FEFF80DCFF4 /* Pods-SLDFramework.debug.xcconfig */,
+				D94148554A4F76E38AAE0EC2 /* Pods-SLDFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63B613321C0B82CC00DE3A84 = {
 			isa = PBXGroup;
 			children = (
 				63B6133E1C0B82CC00DE3A84 /* SLDFramework */,
 				63B6133D1C0B82CC00DE3A84 /* Products */,
+				5DEC997BD882CE9D09E902CC /* Pods */,
+				9C36921CFAE690D90FFD2BD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +96,14 @@
 			path = SLDUtils;
 			sourceTree = "<group>";
 		};
+		9C36921CFAE690D90FFD2BD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98A4AB94710D515A32674BE8 /* libPods-SLDFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -100,10 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63B613441C0B82CC00DE3A84 /* Build configuration list for PBXNativeTarget "SLDFramework" */;
 			buildPhases = (
+				7044E6CBA926A6C8BE187599 /* Check Pods Manifest.lock */,
 				63B613371C0B82CC00DE3A84 /* Sources */,
 				63B613381C0B82CC00DE3A84 /* Frameworks */,
 				63B613391C0B82CC00DE3A84 /* Headers */,
 				63B6133A1C0B82CC00DE3A84 /* Resources */,
+				69D49CBB89883936FDA80795 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +180,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69D49CBB89883936FDA80795 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLDFramework/Pods-SLDFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7044E6CBA926A6C8BE187599 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63B613371C0B82CC00DE3A84 /* Sources */ = {
@@ -258,6 +317,7 @@
 		};
 		63B613451C0B82CC00DE3A84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB62A9410E92FEFF80DCFF4 /* Pods-SLDFramework.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -274,6 +334,7 @@
 		};
 		63B613461C0B82CC00DE3A84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94148554A4F76E38AAE0EC2 /* Pods-SLDFramework.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -307,6 +368,7 @@
 				63B613461C0B82CC00DE3A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
