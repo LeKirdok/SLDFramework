@@ -11,7 +11,7 @@ s.requires_arc = true
 s.version = "0.2.0"
 
 # 3
-s.license = { :type => "MIT", :file => "LICENSE" }
+s.license = { :type => "SLD", :file => "SLD" }
 
 # 4 - Replace with your name and e-mail address
 s.author = { "LeKirdok" => "alper.kirdok@solidict.com" }
