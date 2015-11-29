@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		63B613401C0B82CC00DE3A84 /* SLDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B6133F1C0B82CC00DE3A84 /* SLDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B613591C0B834500DE3A84 /* SLDGrandBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B613541C0B834500DE3A84 /* SLDGrandBaseViewController.h */; };
+		63B6135A1C0B834500DE3A84 /* SLDGrandBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B613551C0B834500DE3A84 /* SLDGrandBaseViewController.m */; };
+		63B6135B1C0B834500DE3A84 /* SLDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B613571C0B834500DE3A84 /* SLDUtils.h */; };
+		63B6135C1C0B834500DE3A84 /* SLDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B613581C0B834500DE3A84 /* SLDUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63B6133C1C0B82CC00DE3A84 /* SLDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B6133F1C0B82CC00DE3A84 /* SLDFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLDFramework.h; sourceTree = "<group>"; };
 		63B613411C0B82CC00DE3A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B613541C0B834500DE3A84 /* SLDGrandBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDGrandBaseViewController.h; sourceTree = "<group>"; };
+		63B613551C0B834500DE3A84 /* SLDGrandBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDGrandBaseViewController.m; sourceTree = "<group>"; };
+		63B613571C0B834500DE3A84 /* SLDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDUtils.h; sourceTree = "<group>"; };
+		63B613581C0B834500DE3A84 /* SLDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				63B6133F1C0B82CC00DE3A84 /* SLDFramework.h */,
+				63B613561C0B834500DE3A84 /* SLDUtils */,
+				63B613531C0B834500DE3A84 /* SLDGrandBaseViewController */,
 				63B613411C0B82CC00DE3A84 /* Info.plist */,
 			);
 			path = SLDFramework;
+			sourceTree = "<group>";
+		};
+		63B613531C0B834500DE3A84 /* SLDGrandBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63B613541C0B834500DE3A84 /* SLDGrandBaseViewController.h */,
+				63B613551C0B834500DE3A84 /* SLDGrandBaseViewController.m */,
+			);
+			path = SLDGrandBaseViewController;
+			sourceTree = "<group>";
+		};
+		63B613561C0B834500DE3A84 /* SLDUtils */ = {
+			isa = PBXGroup;
+			children = (
+				63B613571C0B834500DE3A84 /* SLDUtils.h */,
+				63B613581C0B834500DE3A84 /* SLDUtils.m */,
+			);
+			path = SLDUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +88,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B613401C0B82CC00DE3A84 /* SLDFramework.h in Headers */,
+				63B613591C0B834500DE3A84 /* SLDGrandBaseViewController.h in Headers */,
+				63B6135B1C0B834500DE3A84 /* SLDUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B6135A1C0B834500DE3A84 /* SLDGrandBaseViewController.m in Sources */,
+				63B6135C1C0B834500DE3A84 /* SLDUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
