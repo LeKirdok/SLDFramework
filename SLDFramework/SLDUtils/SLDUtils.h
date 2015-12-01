@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
 #import "UIImageView+WebCache.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 
 @interface SLDUtils : NSObject
 
@@ -18,7 +18,7 @@
 
 + (SLDUtils *)sharedInstance;
 
-+ (AppDelegate *)getAppDelegate;
+//+ (AppDelegate *)getAppDelegate;
 - (void)showHud:(NSString *)text view:(UIView *)view;
 - (void)hideHud;
 - (void)informWithAlertViewWithTitle:(NSString *)title andMessage:(NSString *)message;

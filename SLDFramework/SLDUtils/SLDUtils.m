@@ -179,12 +179,12 @@ static SLDUtils *singletonInstance;
     return keyboardDoneButtonToolBar;
     
 }
-
+/*
 #pragma mark - Getting AppDelegate
 + (AppDelegate*)getAppDelegate{
     return (AppDelegate*)[UIApplication sharedApplication].delegate;
 }
-
+*/
 #pragma mark - Save NSUserDefaults
 
 + (void)saveNSUserDefaults:(id)object key:(NSString *)key{
