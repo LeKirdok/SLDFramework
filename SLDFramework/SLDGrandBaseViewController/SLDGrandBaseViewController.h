@@ -10,4 +10,6 @@
 
 @interface SLDGrandBaseViewController : UIViewController
 
+- (void)showErrorWithErrorCodes:(long)errorCode;
+
 @end

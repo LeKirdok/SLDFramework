@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "MBProgressHUD.h"
 #import "UIImageView+WebCache.h"
+#import "AppDelegate.h"
 
 @interface SLDUtils : NSObject
 
@@ -17,6 +18,7 @@
 
 + (SLDUtils *)sharedInstance;
 
++ (AppDelegate *)getAppDelegate;
 - (void)showHud:(NSString *)text view:(UIView *)view;
 - (void)hideHud;
 - (void)informWithAlertViewWithTitle:(NSString *)title andMessage:(NSString *)message;
@@ -26,13 +28,11 @@
 + (CGFloat)getScreenWidth;
 + (UIImage *)scaleImage:(UIImage *)sourceImage scaledToWidth:(float)i_width;
 
-//SORULACAKLAR
-
++ (void)saveNSUserDefaults:(id)object key:(NSString *)key;
 - (UIToolbar *)getOkeyButton:(UIViewController *)viewController;
 - (void)closeKeyboard:(UIBarButtonItem *)sender;
 
 + (CGSize)getCalculateLabelSizeMethod:(NSString *)text font:(UIFont *)font sizeMake:(CGSize)sizeMake;
-
 
 //Calculate Date Methods
 + (NSString *)getDateFromSecondSince1970:(NSString *)second dateFormat:(NSString *)dateFormat;

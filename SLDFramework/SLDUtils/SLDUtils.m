@@ -9,8 +9,6 @@
 #import "SLDUtils.h"
 #import <objc/runtime.h>
 
-#define BASE_URL @"ALPER"
-
 @implementation SLDUtils
 
 static SLDUtils *singletonInstance;
@@ -51,7 +49,6 @@ static SLDUtils *singletonInstance;
         NSLog(@"Singleton instance already exists. You can only instantiate one instance of SlideNavigationController. This could cause major issues");
     
     singletonInstance = self;
-    //self.keepString = BASE_URL;
     
 }
 
@@ -180,6 +177,20 @@ static SLDUtils *singletonInstance;
     [keyboardDoneButtonToolBar setItems:[NSArray arrayWithObjects:spacer1, spacer2, doneButton, nil]];
     
     return keyboardDoneButtonToolBar;
+    
+}
+
+#pragma mark - Getting AppDelegate
++ (AppDelegate*)getAppDelegate{
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
+}
+
+#pragma mark - Save NSUserDefaults
+
++ (void)saveNSUserDefaults:(id)object key:(NSString *)key{
+    
+    [[NSUserDefaults standardUserDefaults]setObject:object forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
