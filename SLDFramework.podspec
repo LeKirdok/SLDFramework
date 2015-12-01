@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "SLDFramework"
-s.summary = "Added new methods"
+s.summary = "Removed AppDelegate"
 s.requires_arc = true
 
 # 2
-s.version = "0.4.0"
+s.version = "0.5.0"
 
 # 3
 s.license = { :type => "SLD", :file => "SLD" }
